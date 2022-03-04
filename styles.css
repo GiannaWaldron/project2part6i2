@@ -1,0 +1,97 @@
+article {
+    background: radial-gradient(
+      hsl(346 71.4% 60.2%),
+      hsl(0 34.5% 45.5%), 
+      hsl(346 96.2% 31.2%),
+      hsl(346 95.6% 17.6%) 
+    ) fixed;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-align: center;
+    display: block;
+  } 
+  
+  body {
+    background: hsl(346 93.9% 6.5%);
+    color: white;
+    min-block-size: 200vh;
+    min-inline-size: 100%;
+    padding: 5vmin;
+    box-sizing: border-box;
+    display: grid;
+    place-content: center;
+    font-family: system-ui;
+    font-size: min(200%, 5vmin);
+  }
+  
+  h1, p, body {
+    margin: 0;
+  }
+  
+  h1 {
+    font-size: 275px;
+    line-height: 1.0;
+    max-inline-size: 15ch;
+    margin: auto;
+  }
+  h6:hover{
+    filter: blur(30px);
+  }
+  h6 {
+      font-family: system-ui;
+      font-size: 75px;
+      text-align: center;
+      margin-left: 80px;
+      margin-right: 80px;
+  }
+  
+  p {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin-top: 1ch;
+    line-height: 1.35;
+    max-inline-size: 40ch;
+    margin: auto;
+    kerning: 10px;
+    text-align: left;
+  }
+  img {
+      animation-name: spin;
+      animation-duration: 8000ms;
+      animation-iteration-count: infinite;
+      animation-timing-function: linear; 
+    } 
+    @keyframes spin {
+        from {
+            transform:rotate(0deg);
+        }
+        to {
+            transform:rotate(360deg);
+        }
+    }
+  .button {
+      filter: drop-shadow(0px 0px 0px hsl(0 20% 77.5%));
+      transition: all 0.3s linear;
+      transition: all 0.3s linear;
+      transition: all 0.3s linear;	
+  }
+  .button:hover {
+      filter: drop-shadow(0px 0px 35px hsl(0 34.5% 45.5%));
+  }
+  .button {
+      width: 50vh;
+      padding: 100px;
+      filter: drop-shadow(0px 0px 0px hsl(0 20% 77.5%));
+        transition: all 0.3s linear;
+        transition: all 0.3s linear;
+        transition: all 0.3s linear;
+    
+    }
+    .button:hover {
+        filter: drop-shadow(0px 0px 35px hsl(0 34.5% 45.5%));
+    }
+  
+  html {
+    block-size: 100%;
+    inline-size: 100%;
+    text-align: center;
+  }
