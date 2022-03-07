@@ -6,6 +6,7 @@ article {
       hsl(346 95.6% 17.6%) 
     ) fixed;
     -webkit-background-clip: text;
+    -webkit-box-decoration-break: clone;
     -webkit-text-fill-color: transparent;
     text-align: center;
     display: block;
