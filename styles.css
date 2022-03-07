@@ -4,7 +4,7 @@ article {
       hsl(0 34.5% 45.5%), 
       hsl(346 96.2% 31.2%),
       hsl(346 95.6% 17.6%) 
-    ) fixed;
+    ) absolute;
     -webkit-background-clip: text;
     -webkit-box-decoration-break: clone;
     -webkit-text-fill-color: transparent;
@@ -19,7 +19,7 @@ article {
     min-inline-size: 100%;
     padding: 5vmin;
     box-sizing: border-box;
-    display: grid;
+    display: block;
     place-content: center;
     font-family: system-ui;
     font-size: min(200%, 5vmin);
