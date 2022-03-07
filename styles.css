@@ -4,16 +4,18 @@ article {
       hsl(0 34.5% 45.5%), 
       hsl(346 96.2% 31.2%),
       hsl(346 95.6% 17.6%) 
-    ) absolute;
+    ) fixed;
     -webkit-background-clip: text;
     -webkit-box-decoration-break: clone;
     -webkit-text-fill-color: transparent;
     text-align: center;
-    display: block;
+    transform: translateZ(0);
+    position: inline;
   } 
   
   body {
     background: hsl(346 93.9% 6.5%);
+    position: inline;
     color: white;
     min-block-size: 200vh;
     min-inline-size: 100%;
@@ -21,7 +23,7 @@ article {
     box-sizing: border-box;
     display: block;
     place-content: center;
-    font-family: system-ui;
+    font-family: Helvetica, sans-serif;
     font-size: min(200%, 5vmin);
   }
   
@@ -30,24 +32,28 @@ article {
   }
   
   h1 {
-    font-size: 275px;
+    font-size: 245px;
     line-height: 1.0;
+    font-family: 'Michroma', sans-serif;;
     max-inline-size: 15ch;
     margin: auto;
   }
   h6:hover{
-    filter: blur(30px);
+    transition: blur(80px);
+    color: rgb(143, 18, 18);
   }
   h6 {
-      font-family: system-ui;
-      font-size: 75px;
+      font-family: 'Michroma', sans-serif;;
+      font-size: 70px;
       text-align: center;
+      kerning: 20px;
+      color: rgb(236,178,161);
       margin-left: 80px;
       margin-right: 80px;
   }
   
   p {
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-family: Helvetica, sans-serif;
     margin-top: 1ch;
     line-height: 1.35;
     max-inline-size: 40ch;
